@@ -17,7 +17,7 @@
 
 /* state applied by JS once user scrolls past threshold */
 .nav-bar.is-scrolled {
-    background: rgba(255, 255, 255, 0.88);
+    background: rgb(255, 255, 255);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #33333320;
     color: var(--text-color);
@@ -47,7 +47,7 @@
 
 .logo-container {
     height: 36px;
-    width: 72px;
+    width: fit-content;
 }
 
 .logo-container img {
