@@ -1,0 +1,120 @@
+.nav-bar {
+    width: 100%;
+    height: fit-content;
+    padding: 0.8rem 5rem;
+
+    background-color: transparent;
+    position: fixed;
+    z-index: 8888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar.is-scrolled .nav-links li a {
+    color: var(--text-color);
+}
+
+/* state applied by JS once user scrolls past threshold */
+.nav-bar.is-scrolled {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #33333320;
+    color: var(--text-color);
+}
+
+.bars {
+    height: fit-content;
+    width: fit-content;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background: #333;
+
+
+}
+
+
+
+
+.logo-container {
+    height: 36px;
+    width: 72px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-bar .nav-links {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.nav-bar .nav-links li a {
+    color: var(--color-accent);
+}
+
+.display-none {
+    display: none;
+}
+
+
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background: #FFFFFF;
+    transition: 0.5s ease;
+    padding: 2.6rem;
+    z-index: 9999;
+}
+
+.mobile-sidebar.active {
+    left: 0;
+}
+
+.mobileNav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.mobileNav-links li a {
+    color: #858585;
+}
+
+
+/*----- responsive: tablet & up -----*/
+@media (min-width: 640px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+
+    header {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .display-none {
+        display: flex;
+    }
+
+    .bars {
+        display: none;
+    }
+}

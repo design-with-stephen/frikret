@@ -1,0 +1,322 @@
+/*----- mission, vision & values section -----*/
+.mvv-section {
+  background: #fff;
+  padding: 4rem 0;
+}
+
+.mvv-cards {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.mvv-card {
+  background: #FAFFFF;
+  border: 1px solid #9999994A;
+  border-radius: 5px;
+  padding: 2rem;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.mvv-card:hover {
+  background: var(--section-bg-color);
+  transform: translateY(-4px);
+  color: var(--color-text-white);
+}
+
+.mvv-card:hover p,
+.mvv-card:hover .mvv-title {
+  color: var(--color-text-white);
+}
+
+.mvv-title {
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 0.85rem;
+  position: relative;
+  padding-bottom: 0.85rem;
+}
+
+.mvv-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+.mvv-card p {
+  font-size: 0.9rem;
+}
+
+/*----- stats section -----*/
+.stats-section {
+  background: var(--section-bg-color);
+  padding: 3.5rem 0;
+}
+
+.stats-cards {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 0;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #FAFFFF;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #F0FFFF9E;
+  letter-spacing: 0.02em;
+}
+
+/*----- why choose us section -----*/
+.why-us-section {
+  padding: 4rem 0;
+}
+
+.why-us-cards {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.why-us-card {
+  background: #fff;
+  border: 1px solid #9999994A;
+  border-radius: 5px;
+  padding: 1.6rem;
+}
+
+.why-us-title {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.6rem;
+}
+
+.why-us-card p {
+  font-size: 0.85rem;
+}
+
+/*----- our process section -----*/
+.process-section {
+  background: #fff;
+  padding: 4rem 0;
+}
+
+.process-cards {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.process-card {
+  position: relative;
+  padding: 1.6rem;
+  border: 1px solid #9999994A;
+  border-radius: 5px;
+}
+
+.process-step {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.process-title {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.6rem;
+}
+
+.process-card p {
+  font-size: 0.85rem;
+}
+
+/*----- cta section -----*/
+.cta-section {
+  background: #FAFFFF;
+  padding: 4rem 0;
+}
+
+.cta-section .section-title {
+  font-size: 1.4rem;
+  color: #222;
+}
+
+.cta-section p {
+  max-width: 480px;
+  margin: 0.6rem 0 1.4rem 0;
+}
+
+.cta-section .btn {
+  width: fit-content;
+  padding: 1rem 2.4rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  transition: background 0.3s ease;
+}
+
+.cta-section .btn:hover {
+  background: #0400A0;
+}
+
+/*----- team section spacing fix -----*/
+.team-section {
+  padding: 2rem 0;
+  background: #fff;
+}
+
+.teams-cards {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/*----- testimonial carousel -----*/
+.testmonials-section {
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.testimonial-carousel {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 0.6rem;
+  box-sizing: border-box;
+}
+
+.carousel-slide .team-card,
+.carousel-slide.team-card {
+  height: 100%;
+  border: 1px solid #9999994A;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.carousel-arrow {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #9999998F;
+  background: #fff;
+  color: #555;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background: #0600B8;
+  border-color: #0600B8;
+  color: #fff;
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.6rem;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #9999994A;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: #0600B8;
+  transform: scale(1.2);
+}
+
+/* tablet: 2 per view */
+@media (min-width: 640px) {
+  .carousel-slide {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/*----- responsive: tablet & up -----*/
+@media (min-width: 768px) {
+  .mvv-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stats-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .why-us-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .teams-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .carousel-slide {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+
+  .process-card {
+    padding: 2rem 1.6rem;
+  }
+}

@@ -1,0 +1,50 @@
+/*----- page loader -----*/
+.loader {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  background: #FAFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader::after {
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 3px solid #9999994A;
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: loader-spin 0.8s linear infinite;
+}
+
+.loader.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Prevent scroll flicker/jump while loader is visible */
+body.loading {
+  overflow: hidden;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .loader::after {
+    animation: none;
+    border-top-color: #9999994A;
+  }
+}
