@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://design-with-stephen.github.io/frikret/sitemap.xml
